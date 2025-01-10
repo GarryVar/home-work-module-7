@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "Cormorant";
+  src: url("../fonts/Cormorant-Light.woff2") format("woff2"),
+    url("../fonts/Cormorant-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cormorant";
+  src: url("../fonts/Cormorant-LightItalic.woff2") format("woff2"),
+    url("../fonts/Cormorant-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans Condensed";
+  src: url("../fonts/OpenSansCondensed-SemiBold.woff2") format("woff2"),
+    url("../fonts/OpenSansCondensed-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Regular.woff2") format("woff2"),
+    url("../fonts/OpenSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Italic.woff2") format("woff2"),
+    url("../fonts/OpenSans-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+body {
+  position: relative;
+
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+  background-color: var(--white-color);
+  font-family: "Cormorant";
+}
+
+button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+fieldset {
+  padding: 0;
+  border: none;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
