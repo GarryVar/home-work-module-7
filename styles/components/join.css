@@ -66,10 +66,44 @@
   background-color: var(--white-color);
 }
 
+.join__form button[type="submit"]:hover,
+.join__form button[type="submit"]:focus {
+  background-color: var(--text-color);
+  color: var(--light-color);
+}
+
 .join__form-privacy {
+  position: relative;
   display: flex;
   align-items: flex-start;
   gap: 10px;
+}
+
+.join__form-checkbox {
+  position: relative;
+  margin: 0;
+  left: 0;
+  z-index: 99999;
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+  opacity: 0;
+}
+
+.join__form-check {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+
+  left: 0;
+  z-index: 0;
+  border: 1px solid var(--text-color);
+  background-color: var(--white-color);
+}
+
+.join__form-checkbox:checked + .join__form-check {
+  background-color: transparent;
+  background-image: url("../../images/icon-check.svg");
 }
 
 .join__form-privacy p {

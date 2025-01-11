@@ -69,6 +69,12 @@
   border: 1px solid var(--text-color);
 }
 
+.blog__more:hover,
+.blog__more:focus {
+  background-color: var(--text-color);
+  color: var(--light-color);
+}
+
 @media (max-width: 768px) {
   .blog__articles {
     gap: 30px;
@@ -92,5 +98,16 @@
   .blog__articles img {
     width: 230px;
     height: 153px;
+  }
+}
+
+@media (max-width: 480px) {
+  .blog__articles article {
+    flex-direction: column;
+  }
+
+  .blog__articles img {
+    width: 100%;
+    height: 200px;
   }
 }
