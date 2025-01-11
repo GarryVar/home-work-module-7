@@ -79,7 +79,7 @@
   gap: 10px;
 }
 
-.join__form input[type="checkbox"] {
+.join__form-checkbox {
   position: relative;
   margin: 0;
   left: 0;
@@ -90,7 +90,7 @@
   opacity: 0;
 }
 
-.join__form-privacy span {
+.join__form-check {
   position: absolute;
   width: 10px;
   height: 10px;
@@ -101,9 +101,9 @@
   background-color: var(--white-color);
 }
 
-.join__form input[type="checkbox"]:checked ~ .join__form-privacy span {
-  background-color: var(--text-color);
-  border: none;
+.join__form-checkbox:checked + .join__form-check {
+  background-color: transparent;
+  background-image: url("../../images/icon-check.svg");
 }
 
 .join__form-privacy p {
