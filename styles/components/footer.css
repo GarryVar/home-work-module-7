@@ -213,3 +213,28 @@
     grid-row: 3;
   }
 }
+
+@media (max-width: 480px) {
+  .footer__nav-contacts {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer__nav-list p {
+    grid-column: 1 / -1;
+  }
+
+  .footer__nav-list img {
+    margin-left: 0;
+  }
+
+  .footer__contacts-connect {
+    grid-column: 2 / 3;
+  }
+
+  .footer__contacts-list {
+    margin-top: 20px;
+    grid-column: 1 / -1;
+    grid-row: 4;
+    justify-content: center;
+  }
+}

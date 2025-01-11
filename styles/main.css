@@ -58,6 +58,7 @@ button {
   border: none;
   background-color: transparent;
   cursor: pointer;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
 }
 
 fieldset {
@@ -81,4 +82,9 @@ h2,
 h3,
 p {
   margin: 0;
+}
+
+nav ul a:hover,
+nav ul a:focus {
+  color: var(--hover-link);
 }
