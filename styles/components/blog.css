@@ -105,9 +105,4 @@
   .blog__articles article {
     flex-direction: column;
   }
-
-  .blog__articles img {
-    width: 100%;
-    height: 200px;
-  }
 }
